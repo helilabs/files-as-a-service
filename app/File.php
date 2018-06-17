@@ -28,7 +28,7 @@ Class File extends Model{
         if($this->is_image()){
             return new ImageAdapter($request, $this);
         }
-
+        //TODO:: Add placeholder adapter implementation
         return new NullAdapter($request, $this);
     }
 
